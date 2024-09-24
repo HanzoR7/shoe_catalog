@@ -1,16 +1,24 @@
-# shoe_catalog
+# 3 практика 
 
-A new Flutter project.
+## Калагов Марат Владимирович
 
-## Getting Started
+### Usage
 
-This project is a starting point for a Flutter application.
+Create
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+flutter create shoe_catalog
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Run 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter emulators --launch Pixel_8_Pro_API_35
+flutter run
+```
+
+### Screens
+
+![image_2024-09-24_12-42-13](https://github.com/user-attachments/assets/0bfb7eaf-e3ca-4a4b-811f-d0cdec702b67)
+&nbsp;
+![image_2024-09-24_12-42-41](https://github.com/user-attachments/assets/a6394aa4-60a7-4123-ae7e-40f8790f1a01)
