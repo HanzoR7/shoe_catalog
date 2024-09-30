@@ -19,6 +19,12 @@ flutter run
 
 ### Screens
 
-![image_2024-09-24_12-42-13](https://github.com/user-attachments/assets/0bfb7eaf-e3ca-4a4b-811f-d0cdec702b67)
+![image_2024-09-30_21-55-08](https://github.com/user-attachments/assets/62d2a743-e82a-4c2b-abcb-8e3933deeb9a)
+
 &nbsp;
-![image_2024-09-24_12-42-41](https://github.com/user-attachments/assets/a6394aa4-60a7-4123-ae7e-40f8790f1a01)
+
+![image_2024-09-30_22-03-59](https://github.com/user-attachments/assets/77ba585f-c68b-444a-b2bb-f43c8a1a7fd5)
+
+&nbsp;
+
+![image_2024-09-30_22-04-14](https://github.com/user-attachments/assets/8987c673-26d7-49cc-a34d-da1f98a96345)
