@@ -7,6 +7,7 @@ class AddShoePage extends StatefulWidget {
   const AddShoePage({super.key, required this.onAddShoe});
 
   @override
+  // ignore: library_private_types_in_public_api
   _AddShoePageState createState() => _AddShoePageState();
 }
 

@@ -3,12 +3,15 @@ class Shoe {
   final String description;
   final double price;
   final String imageUrl;
+  bool isFavorite; // Новое поле для избранного
 
-  Shoe(
-      {required this.name,
-      required this.description,
-      required this.price,
-      required this.imageUrl});
+  Shoe({
+    required this.name,
+    required this.description,
+    required this.price,
+    required this.imageUrl,
+    this.isFavorite = false, // По умолчанию не в избранном
+  });
 }
 
 List<Shoe> shoes = [

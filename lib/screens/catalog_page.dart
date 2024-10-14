@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'shoe_detail_page.dart';
-import 'add_shoe_page.dart'; // Импортируй новую страницу
+import 'add_shoe_page.dart';
 import '../models/shoe.dart';
 
-class CatalogPage extends StatelessWidget {
+class CatalogPage extends StatefulWidget {
   const CatalogPage({super.key});
 
+  @override
+  // ignore: library_private_types_in_public_api
+  _CatalogPageState createState() => _CatalogPageState();
+}
+
+class _CatalogPageState extends State<CatalogPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,8 +26,9 @@ class CatalogPage extends StatelessWidget {
                 MaterialPageRoute(
                   builder: (context) => AddShoePage(
                     onAddShoe: (shoe) {
-                      // Обновить список обуви
-                      shoes.add(shoe);
+                      setState(() {
+                        shoes.add(shoe);
+                      });
                     },
                   ),
                 ),
@@ -39,6 +46,19 @@ class CatalogPage extends StatelessWidget {
                   Image.asset(shoes[index].imageUrl, width: 50, height: 50),
               title: Text(shoes[index].name),
               subtitle: Text('${shoes[index].price.toStringAsFixed(0)} ₽'),
+              trailing: IconButton(
+                icon: Icon(
+                  shoes[index].isFavorite
+                      ? Icons.favorite
+                      : Icons.favorite_border,
+                  color: shoes[index].isFavorite ? Colors.red : null,
+                ),
+                onPressed: () {
+                  setState(() {
+                    shoes[index].isFavorite = !shoes[index].isFavorite;
+                  });
+                },
+              ),
               onTap: () {
                 Navigator.push(
                   context,
